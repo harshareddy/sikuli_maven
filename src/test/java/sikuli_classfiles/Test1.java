@@ -12,7 +12,7 @@ public class Test1 {
   @Test
   public void fileUpload() throws InterruptedException, FindFailed {
 	// Launch the Chrome Browser
-		System.setProperty("webdriver.chrome.driver","C:\\Intellipat_March 22\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
 			
 		// Create a driver object
 		WebDriver driver = new ChromeDriver();
@@ -28,13 +28,13 @@ public class Test1 {
 		Thread.sleep(5000);
 		
 		//s.click("C:\\Intellipat_March 22\\sikuli_maven\\src\\Sikuli_locators\\choosefile.PNG");
-		s.click("C:\\Intellipat_March 22\\choosefile.PNG");
+		s.click("C:\\Users\\I845770\\Documents\\GitHub\\sikuli_maven\\src\\Sikuli_locators\\choosefile.png");
 		Thread.sleep(7000);
-		Pattern filepath = new Pattern("C:\\Intellipat_March 22\\sikuli_maven\\src\\Sikuli_locators\\File Name.PNG");
-		Pattern open_button = new Pattern("C:\\Intellipat_March 22\\sikuli_maven\\src\\Sikuli_locators\\open.PNG");
+		Pattern filepath = new Pattern("C:\\Users\\I845770\\Documents\\GitHub\\sikuli_maven\\src\\Sikuli_locators\\FileName.png");
+		Pattern open_button = new Pattern("C:\\Users\\I845770\\Documents\\GitHub\\sikuli_maven\\src\\Sikuli_locators\\open.png");
 		
 		// To send data to text box use type method.. type is similar to sendKeys()
-		s.type(filepath, "C:\\Intellipat_March 22\\sikuli_maven\\src\\Sikuli_locators\\Adya's word powerpoint of stories..pptx");
+		s.type(filepath, "C:\\Users\\I845770\\Documents\\GitHub\\sikuli_maven\\src\\Sikuli_locators\\Adyas_word powerpoint_of_stories.pptx");
 		Thread.sleep(5000);
 		s.click(open_button);
 		Thread.sleep(5000);
